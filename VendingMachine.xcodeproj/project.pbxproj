@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		434C23791D8C11F500E66BE9 /* VendingMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendingMachine.swift; sourceTree = "<group>"; };
+		43D0DD8C1D8E1A0900BF2214 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		97EC979B1C4E80860081754A /* VendingMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EC979E1C4E80860081754A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97EC97A01C4E80860081754A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,10 +66,11 @@
 				97EC97B01C4E8C7F0081754A /* VendingItemCell.swift */,
 				434C23791D8C11F500E66BE9 /* VendingMachine.swift */,
 				97EC97A21C4E80860081754A /* Main.storyboard */,
-				97EC97A51C4E80860081754A /* Assets.xcassets */,
 				97EC97A71C4E80860081754A /* LaunchScreen.storyboard */,
+				97EC97A51C4E80860081754A /* Assets.xcassets */,
 				97EC97AA1C4E80860081754A /* Info.plist */,
 				97EC97B21C4E9CA90081754A /* VendingInventory.plist */,
+				43D0DD8C1D8E1A0900BF2214 /* MyPlayground.playground */,
 			);
 			path = VendingMachine;
 			sourceTree = "<group>";
