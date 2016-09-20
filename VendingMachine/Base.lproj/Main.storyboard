@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -46,6 +47,10 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <color key="tintColor" red="0.96862745100000003" green="0.80000000000000004" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Add $5"/>
+                                                <connections>
+                                                    <action selector="depositFunds" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZbZ-TV-wID"/>
+                                                    <segue destination="2Rh-Tz-moY" kind="presentation" id="Fxe-Qv-tWX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -182,6 +187,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="409" y="523"/>
+        </scene>
+        <!--Amount Added Modal View Controller-->
+        <scene sceneID="QOo-xK-We4">
+            <objects>
+                <viewController id="2Rh-Tz-moY" customClass="AmountAddedModalViewController" customModule="VendingMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OP8-ue-gTK"/>
+                        <viewControllerLayoutGuide type="bottom" id="LQ1-MM-p3I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RlN-RS-bWb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3K-Mz-lJb">
+                                <rect key="frame" x="0.0" y="544" width="600" height="56"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="c58-ws-tqT"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Ok Thanks!"/>
+                                <connections>
+                                    <action selector="Dismiss:" destination="2Rh-Tz-moY" eventType="touchUpInside" id="TNN-7b-CkF"/>
+                                    <action selector="purchase" destination="BYZ-38-t0r" eventType="touchUpInside" id="jye-HX-zS5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funds Successfully Added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGl-EK-mX0">
+                                <rect key="frame" x="199" y="289.5" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.12941176470588237" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yGl-EK-mX0" firstAttribute="centerY" secondItem="RlN-RS-bWb" secondAttribute="centerY" id="0Uy-a7-FwZ"/>
+                            <constraint firstItem="yGl-EK-mX0" firstAttribute="centerX" secondItem="RlN-RS-bWb" secondAttribute="centerX" id="7Mx-IQ-di8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q3K-Mz-lJb" secondAttribute="trailing" constant="-20" id="E4I-vx-zwb"/>
+                            <constraint firstItem="Q3K-Mz-lJb" firstAttribute="leading" secondItem="RlN-RS-bWb" secondAttribute="leadingMargin" constant="-20" id="HiH-Xb-bUa"/>
+                            <constraint firstItem="Q3K-Mz-lJb" firstAttribute="centerX" secondItem="RlN-RS-bWb" secondAttribute="centerX" id="UFj-hN-hI0"/>
+                            <constraint firstItem="LQ1-MM-p3I" firstAttribute="top" secondItem="Q3K-Mz-lJb" secondAttribute="bottom" id="h3w-1s-qZU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AkG-WY-aL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409" y="1245"/>
         </scene>
     </scenes>
     <resources>
